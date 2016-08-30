@@ -4,174 +4,180 @@ permalink: /
 <!DOCTYPE html>
 <!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->  
 <!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->  
-<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->  
-<head>
-  <title>{{ site.title }}</title>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="{{ site.page.description }}">
-  <meta name="author" content="{{site.page.author}}">    
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.page.baseurl | prepend: site.page.url }}">
-  {% if site.page.favicon_img %}
-  <link rel="shortcut icon" href="{{ site.page.favicon_img_path }}" />
-  {% endif %}
-  <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,400italic,300italic,300,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">   
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-  <link id="theme-style" rel="stylesheet" href="{{ "css/styles.css" | prepend: site.baseurl }}">
-  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-  <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-  <![endif]-->
-</head> 
-<body>
-  <div class="wrapper">
-    <div class="sidebar-wrapper">
-      <div class="profile-container">
-        {% if site.avatar %}<img class="profile" src="{{site.avatar_img_path}}" alt="" />{% endif %}
-        <h1 class="name">{{site.name}}</h1>
-        <h3 class="tagline">{{site.tagline}}</h3>
-      </div>
-      <div class="contact-container container-block">
-        <ul class="list-unstyled contact-list">
-          {% if site.email %}
-          <li class="email">
-            <i class="fa fa-envelope"></i>
-            <a href="mailto: {{site.email}}">{{site.email}}</a>
-          </li>
-          {% endif %}
-          {% if site.phone %}
-          <li class="phone">
-            <i class="fa fa-phone"></i>
-            <a href="tel:{{site.phone}}">{{site.phone}}</a>
-          </li>
-          {% endif %}
-          {% if site.portfolio %}
-          <li class="website">
-            <i class="fa fa-globe"></i>
-            <a href="{{site.portfolio}}" target="_blank">Portfolio</a>
-          </li>
-          {% endif %}
-          {% if site.linkedin_username %}
-          <li class="linkedin">
-            <i class="fa fa-linkedin"></i>
-            <a href=href="https://linkedin.com/in/{{ site.linkedin_username }}" target="_blank">Linkedin</a>
-          </li>
-          {% endif %}
-          {% if site.github_username %}
-          <li class="github">
-            <i class="fa fa-github"></i>
-            <a href="https://github.com/{{ site.github_username }}" target="_blank">Github</a>
-          </li>
-          {% endif %}
-          {% if site.twitter_username %}
-          <li class="twitter">
-            <i class="fa fa-twitter"></i>
-            <a href="https://twitter.com/{{ site.twitter_username }}" target="_blank">Twitter</a>
-          </li>
-          {% endif %}
-        </ul>
-      </div>
-
-      <div class="education-container container-block">
-        <h2 class="container-block-title">Education</h2>
-        {% for edu in site.education %}
-        <div class="item">
-          <h4 class="degree">{{edu.degree}}</h4>
-          <h5 class="meta">{{edu.college}}</h5>
-          <div class="time">{{edu.passout}}</div>
+<!--[if !IE]>
+<!--><html lang="en"> <!--<![endif]-->  
+  <head>
+    <title>{{ site.title }}</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{{ site.page.description }}">
+    <meta name="author" content="{{site.page.author}}">    
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.page.baseurl | prepend: site.page.url }}">
+    {% if site.page.favicon_img %}
+    <link rel="shortcut icon" href="{{ site.page.favicon_img_path }}" />
+    {% endif %}
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,400italic,300italic,300,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">   
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link id="theme-style" rel="stylesheet" href="{{ "css/styles.css" | prepend: site.baseurl }}">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head> 
+  <body>
+    <div class="wrapper">
+      <div class="sidebar-wrapper">
+        <div class="profile-container">
+          {% if site.avatar %}<img class="profile" src="{{site.avatar_img_path}}" alt="" />{% endif %}
+          <h1 class="name">{{site.name}}</h1>
+          <h3 class="tagline">{{site.tagline}}</h3>
         </div>
-        {% endfor %}
-      </div>
-
-      <div class="languages-container container-block">
-        <h2 class="container-block-title">Languages</h2>
-        <ul class="list-unstyled interests-list">
-          {% for language in site.languages %}
-          <li>{{language.name}} <span class="lang-desc">({{language.level}})</span></li>
-          {% endfor %}
-        </ul>
-      </div>
-
-      <div class="interests-container container-block">
-        <h2 class="container-block-title">Interests</h2>
-        <ul class="list-unstyled interests-list">
-          {% for interest in site.interests %}
-          <li>{{interest.name}}</li>
-          {% endfor %}
-        </ul>
-      </div>
-    </div>
-
-    <div class="main-wrapper">
-      <section class="section summary-section">
-        <h2 class="section-title"><i class="fa fa-user"></i>Career Profile</h2>
-        <div class="summary">
-          <p>{{site.career_profile}}</p>
-        </div>
-      </section>
-
-      <section class="section experiences-section">
-        <h2 class="section-title"><i class="fa fa-briefcase"></i>Experiences</h2>
-        {% for experience in site.experiences %}
-        <div class="item">
-          <div class="meta">
-            <div class="upper-row">
-              <h3 class="job-title">{{experience.title}}</h3>
-              <div class="time">{{experience.years}}</div>
-            </div>
-            <div class="company">{{experience.company}}</div>
-          </div>
-          <div class="details">
-            {% for work in experience.work%}
-            <p>{{work.detail}}</p>
-            {% endfor %}
-          </div>
-        </div>
-        {% endfor %}
-      </section>
-      <!--//section-->
-
-      <section class="section projects-section">
-        <h2 class="section-title"><i class="fa fa-archive"></i>Projects</h2>
-        <div class="intro">
-          <p>{{site.project.intro}}</p>
+        <div class="contact-container container-block">
+          <ul class="list-unstyled contact-list">
+            {% if site.download_url%}
+            <li class="website">
+              <i class="fa fa-download"></i>
+              <a href="{{site.download_url}}" download="{{site.download_name}}">Download Resume(pdf)</a>
+            </li>
+            {% endif %}
+            {% if site.email %}
+            <li class="email">
+              <i class="fa fa-envelope"></i>
+              <a href="mailto: {{site.email}}">{{site.email}}</a>
+            </li>
+            {% endif %}
+            {% if site.phone %}
+            <li class="phone">
+              <i class="fa fa-phone"></i>
+              <a href="tel:{{site.phone}}">{{site.phone}}</a>
+            </li>
+            {% endif %}
+            {% if site.portfolio %}
+            <li class="website">
+              <i class="fa fa-globe"></i>
+              <a href="{{site.portfolio}}" target="_blank">Portfolio</a>
+            </li>
+            {% endif %}
+            {% if site.linkedin_username %}
+            <li class="linkedin">
+              <i class="fa fa-linkedin"></i>
+              <a href=href="https://linkedin.com/in/{{ site.linkedin_username }}" target="_blank">Linkedin</a>
+            </li>
+            {% endif %}
+            {% if site.github_username %}
+            <li class="github">
+              <i class="fa fa-github"></i>
+              <a href="https://github.com/{{ site.github_username }}" target="_blank">Github</a>
+            </li>
+            {% endif %}
+            {% if site.twitter_username %}
+            <li class="twitter">
+              <i class="fa fa-twitter"></i>
+              <a href="https://twitter.com/{{ site.twitter_username }}" target="_blank">Twitter</a>
+            </li>
+            {% endif %}
+          </ul>
         </div>
 
-        {% for project in site.projects %}
-        <div class="item">
-          <span class="project-title">{{project.title}}</span> - <span class="project-tagline">{{project.tagline}}</span>
-        </div>
-        {% endfor %}
-      </section>
-
-      <section class="skills-section section">
-        <h2 class="section-title"><i class="fa fa-rocket"></i>Skills &amp; Proficiency</h2>
-        <div class="skillset">
-          {% for skill in site.skillset%}
+        <div class="education-container container-block">
+          <h2 class="container-block-title">Education</h2>
+          {% for edu in site.education %}
           <div class="item">
-            <h3 class="level-title">{{skill.name}}</h3>
-            <div class="level-bar">
-              <div class="level-bar-inner" data-level="{{skill.level}}%">
+            <h4 class="degree">{{edu.degree}}</h4>
+            <h5 class="meta">{{edu.college}}</h5>
+            <div class="time">{{edu.passout}}</div>
+          </div>
+          {% endfor %}
+        </div>
+
+        <div class="languages-container container-block">
+          <h2 class="container-block-title">Languages</h2>
+          <ul class="list-unstyled interests-list">
+            {% for language in site.languages %}
+            <li>{{language.name}} <span class="lang-desc">({{language.level}})</span></li>
+            {% endfor %}
+          </ul>
+        </div>
+
+        <div class="interests-container container-block">
+          <h2 class="container-block-title">Interests</h2>
+          <ul class="list-unstyled interests-list">
+            {% for interest in site.interests %}
+            <li>{{interest.name}}</li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+
+      <div class="main-wrapper">
+        <section class="section summary-section">
+          <h2 class="section-title"><i class="fa fa-user"></i>Career Profile</h2>
+          <div class="summary">
+            <p>{{site.career_profile}}</p>
+          </div>
+        </section>
+
+        <section class="section experiences-section">
+          <h2 class="section-title"><i class="fa fa-briefcase"></i>Experiences</h2>
+          {% for experience in site.experiences %}
+          <div class="item">
+            <div class="meta">
+              <div class="upper-row">
+                <h3 class="job-title">{{experience.title}}</h3>
+                <div class="time">{{experience.years}}</div>
+              </div>
+              <div class="company">{{experience.company}}</div>
+            </div>
+            <div class="details">
+              {% for work in experience.work%}
+              <p>{{work.detail}}</p>
+              {% endfor %}
+            </div>
+          </div>
+          {% endfor %}
+        </section>
+        <!--//section-->
+
+        <section class="section projects-section">
+          <h2 class="section-title"><i class="fa fa-archive"></i>Projects</h2>
+          <div class="intro">
+            <p>{{site.projects.intro}}</p>
+          </div>
+
+          {% for project in site.projects.items %}
+          <div class="item">
+            <span class="project-title">{{project.title}}</span> - <span class="project-tagline">{{project.tagline}}</span>
+          </div>
+          {% endfor %}
+        </section>
+
+        <section class="skills-section section">
+          <h2 class="section-title"><i class="fa fa-rocket"></i>Skills &amp; Proficiency</h2>
+          <div class="skillset">
+            {% for skill in site.skillsets%}
+            <div class="item">
+              <h3 class="level-title">{{skill.name}}</h3>
+              <div class="level-bar">
+                <div class="level-bar-inner" data-level="{{skill.level}}%">
+                </div>
               </div>
             </div>
+            {% endfor %}
           </div>
-          {% endfor %}
-        </div>
-      </section>
+        </section>
+      </div>
     </div>
-  </div>
 
-  <footer class="footer">
-    <div class="text-center">
-      <!--/* This template is released under the Creative Commons Attribution 3.0 License. Please keep the attribution link below when using for your own project. Thank you for your support. :) If you'd like to use the template without the attribution, you can check out other license options via our website: themes.3rdwavemedia.com */-->
-      <small class="copyright">Designed with <i class="fa fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>
-    </div>
-  </footer>
-  <script src="https://code.jquery.com/jquery-3.1.0.slim.min.js" integrity="sha256-cRpWjoSOw5KcyIOaZNo4i6fZ9tKPhYYb6i5T9RSVJG8=" crossorigin="anonymous"></script>
-  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="{{ "js/main.js" | prepend: site.baseurl }}"></script>      
-</body>
+    <footer class="footer">
+      <div class="text-center">
+        <!--/* This template is released under the Creative Commons Attribution 3.0 License. Please keep the attribution link below when using for your own project. Thank you for your support. :) If you'd like to use the template without the attribution, you can check out other license options via our website: themes.3rdwavemedia.com */-->
+        <small class="copyright">Designed with <i class="fa fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="{{ "js/main.js" | prepend: site.baseurl }}"></script>      
+  </body>
 </html> 

@@ -18,31 +18,37 @@ avatar_img_path: "https://avatars2.githubusercontent.com/u/448511"
 #Contact Details
 name: Yashprit
 tagline: "Full Stack Developer"
-email: yashprits@gmail.com
-phone: (+91)7022591535
+email: yashprit@yashprit.com
+#phone: phone_number
 linkedin_username: yashprit
 github_username:  yashprit
+download_url: "google.com"
+download_name: "Yashprit_Singh_Resume.pdf"
 
 #education highest degree on top
 education:
   - degree: "BE Computer Engineering"
     college: "Army Institute Of Technology"
     passout: 2009
-  - degree: "BE Computer Engineering"
-    college: "Army Institute Of Technology"
-    passout: 2009
+  - degree: "12th"
+    college: "Kendriya Vidyalaya"
+    passout: 2003
+  - degree: "10th"
+    college: "Kendriya Vidyalaya"
+    passout: 2001
 
 #Language
 languages:
   - name: English
-    level: Proffesional
+    level: Professional
   - name: Hindi
     level: Native
 
 #Interests
 interests:
+  - name: Meetups
   - name: Photography
-  - name: Desing
+  - name: Designing
 
 career_profile: "A proficient software engineer with extensive analysis knowledge of software 
 design process, configuration implementation and capable of creating business modules.Excellent 
@@ -51,20 +57,75 @@ sssnew concepts quickly, working well under pressure, and communicating."
 
 experiences:
   - title: "Consultant"
-    years: "April-2015"
-    company: "Option3 Consulting Pvt. Ltd."
+    years: "April 2015 - Present"
+    company: "Option3"
     work:
-      -detail: "Working as Full Stack Developer, using React and Java."
-      -detail: "Using ES6 for development, along with Babel. "
-      -detail: "Writing test using Jest and JUnit."
-      -detail: "Setting up build environment using Jenkins, Sonar and peer to peer code review."
-      -detail: "Tools & Technologies: Apache Karaf, React, Postgres, JDBI, Maven, Webpack "
-  - title: "Consultant"
-    years: "April-2015"
-    company: "Option3 Consulting Pvt. Ltd."
+      - detail: "Working as Full Stack Developer, using React and Java."
+      - detail: "Using ES6 for development, along with Babel. "
+      - detail: "Writing test using Jest and JUnit."
+      - detail: "Setting up build environment using Jenkins, Sonar and peer to peer code review."
+      - detail: "Tools & Technologies: Apache Karaf, React, Postgres, JDBI, Maven, Webpack "
+  - title: "Senior Software Developer"
+    years: "July 2013 - April 2015"
+    company: "Webonise"
     work:
-      -detail: "Working as Full Stack Developer, using React and Java."
-      -detail: "Using ES6 for development, along with Babel. "
-      -detail: "Writing test using Jest and JUnit."
-      -detail: "Setting up build environment using Jenkins, Sonar and peer to peer code review."
-      -detail: "Tools & Technologies: Apache Karaf, React, Postgres, JDBI, Maven, Webpack "
+      - detail: "Write, test and debug code."
+      - detail: "Lead development of formalized solution methodologies."
+      - detail: "Provides expertise to identify and translate system requirements into software design."
+      - detail: "Handling JavaScript as a practice inside organization."
+      - detail: "Mentor and guide more junior technical resources."
+      - detail: "Feed the overall project status to the senior management."
+      - detail: "Work with VP(Delivery) to define overall recruiting needs and expertise in technologies."
+      - detail: "Provide quality assurance for services within the solution area."
+      - detail: "Reviewing code to improving both the overall quality of software and the developers' skills."
+      - detail: "Identifying best tool or framework based on system requirement and skill set."
+      - detail: "Involved in pre sales calls as pre sales solution architect as to demystify technology, optimize the sales process, and bash down any technical barriers. "
+  - title: "Software Developer"
+    years: "Feb 2011 - July 2013"
+    company: "i-ValueBridge"
+    work:
+      - detail: "Responsible for smooth going and review of project on weekly bases, interacting with client for increasing productivity of project.  "
+      - detail: "Requirement Gathering, analysis, Development,Testing,Deployment which cover total working of software development life cycle."
+      - detail: "Monitoring Project by performing various method of agile development like performing scrums."
+      - detail: "Work on UI design using CSS3, HTML5 and functionality using JavaScript and its various framework like jQuery. 
+        Back-end is done using Java technology that will be used to store state of user, storing result in database."
+      - detail: "Handling everything from Collecting and understanding requirement from various department of engineering and 
+        converting them into technical details, POC, Prototyping, Developing, Testing, Deploying."
+
+projects:
+  into: "List of of side projects, open source libraries and project from my past employement"
+  items:
+    - title: "Virtual Technical University"
+      tagline: "Virtual technical university provides higher education programs through electronic media, typically the Internet. 
+      It allows certification in any course along with practical experiences using the remote Triggering Lab. Few of modules were Online session booking, 
+      Evaluate Exams and certificate generation which would also include evaluation of the remote triggered experiment."
+    - title: "Remote laboratory"
+      tagline: "Remote laboratory (also known as online laboratory, remote workbench) is the use of telecommunications to remotely conduct real (as opposed to virtual) 
+      experiments, at the physical location of the operating technology, whilst the scientist is utilizing technology from a separate geographical location."
+    - title: "Cloud Infra Setup & Plateform Development"
+      tagline: "Project include IAAS setup of Cloud Services using Popular Virtualization technologies like VMWare (ESX, vCenter, vSphere)and Microsoft 
+      (Hyper-V, SCVMM, Windows 2008 DataCenter edition). Project also include development of platform for selling cloud infra service online, making payments, 
+      monitoring services and Creation & Migration of services. Platform developed using Java technology, Web services."
+
+skillsets:
+  - name: JavaScript
+    level: 80
+  - name: AngularJS
+    level: 70
+  - name: BackboneJS
+    level: 60
+  - name: ReactJS
+    level: 90
+  - name: D3
+    level: 40
+  - name: Java
+    level: 50
+  - name: Spring Framework
+    level: 40
+  - name: Git
+    level: 80
+  - name: OOP
+    level: 70
+  - name: Functional Programming
+    level: 60
+
