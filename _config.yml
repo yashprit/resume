@@ -8,6 +8,8 @@ favicon_img_path: "imgs/favicon.ico"
 
 baseurl: '/'
 
+analytics: 'UA-61984575-2'
+
 #Side Bar Settings
 avatar: yes
 #avatar_img_path: "imgs/avatar.jpg""
