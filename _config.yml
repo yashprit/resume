@@ -1,0 +1,70 @@
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+favicon_img: yes
+favicon_img_path: "imgs/favicon.ico"
+#favicon_img_path: "https://external.url/favicon.ico"
+
+baseurl: '/'
+
+#Side Bar Settings
+avatar: yes
+#avatar_img_path: "imgs/avatar.jpg""
+# You can link to your GitHub image. That way it will get updated
+# automatically whenever you change your GitHub profile picture
+avatar_img_path: "https://avatars2.githubusercontent.com/u/448511"
+
+#Contact Details
+name: Yashprit
+tagline: "Full Stack Developer"
+email: yashprits@gmail.com
+phone: (+91)7022591535
+linkedin_username: yashprit
+github_username:  yashprit
+
+#education highest degree on top
+education:
+  - degree: "BE Computer Engineering"
+    college: "Army Institute Of Technology"
+    passout: 2009
+  - degree: "BE Computer Engineering"
+    college: "Army Institute Of Technology"
+    passout: 2009
+
+#Language
+languages:
+  - name: English
+    level: Proffesional
+  - name: Hindi
+    level: Native
+
+#Interests
+interests:
+  - name: Photography
+  - name: Desing
+
+career_profile: "A proficient software engineer with extensive analysis knowledge of software 
+design process, configuration implementation and capable of creating business modules.Excellent 
+Interpersonal skills, outstanding problem solving and decision making skills. Skilled at learning 
+sssnew concepts quickly, working well under pressure, and communicating."
+
+experiences:
+  - title: "Consultant"
+    years: "April-2015"
+    company: "Option3 Consulting Pvt. Ltd."
+    work:
+      -detail: "Working as Full Stack Developer, using React and Java."
+      -detail: "Using ES6 for development, along with Babel. "
+      -detail: "Writing test using Jest and JUnit."
+      -detail: "Setting up build environment using Jenkins, Sonar and peer to peer code review."
+      -detail: "Tools & Technologies: Apache Karaf, React, Postgres, JDBI, Maven, Webpack "
+  - title: "Consultant"
+    years: "April-2015"
+    company: "Option3 Consulting Pvt. Ltd."
+    work:
+      -detail: "Working as Full Stack Developer, using React and Java."
+      -detail: "Using ES6 for development, along with Babel. "
+      -detail: "Writing test using Jest and JUnit."
+      -detail: "Setting up build environment using Jenkins, Sonar and peer to peer code review."
+      -detail: "Tools & Technologies: Apache Karaf, React, Postgres, JDBI, Maven, Webpack "
